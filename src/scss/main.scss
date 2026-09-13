@@ -1,0 +1,40 @@
+@import "font";
+@import "base";
+@import "layout";
+@import "modules/example";
+@import "components/card";
+
+:root {
+  --Primary-0: #fff;
+  --Primary-100: #f5f5f5;
+  --Primary-200: #eceeef;
+
+  --Primary-400: #bbb;
+  --Primary-500: #b4bbc0;
+  --Primary-600: #6c6f72;
+
+  --Primary-800: #343434;
+  --Primary-900: #000000;
+  --Primary-900-70: rgba(0, 0, 0, 0.7);
+  --Primary-900-50: rgba(0, 0, 0, 0.5);
+
+  --font-family-base: "Montserrat", sans-serif;
+  --heading-1: 2rem; // 32px
+  --heading-2: 1.75rem; // 28px
+  --heading-3: 1.5rem; // 24px
+  --heading-4: 1.25rem; // 20px
+
+  --body-1-size: 1.25rem; // 20px
+  --body-1-weight-regular: 400;
+  --body-1-weight-semibold: 600;
+
+  --body-2-size: 1rem; // 16px
+  --body-2-weight-medium: 500;
+  --body-2-weight-regular: 400;
+  --body-2-text-decoration: underline;
+
+  --body-3-size: 0.875rem; // 14px
+  --body-3-weight-light: 300;
+  --body-3-weight-regular: 400;
+  --body-3-weight-semibold: 600;
+}
