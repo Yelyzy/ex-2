@@ -1,0 +1,178 @@
+.filters {
+  display: inline-flex;
+  padding: 16px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  border-radius: 32px;
+  background: var(--Primary-900-50, rgba(0, 0, 0, 0.5));
+}
+
+.visually-hidden {
+  position: absolute;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+fieldset {
+  background-origin: none;
+  border: none;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trip-type,
+.flight-search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.heading-1 {
+  font-size: var(--heading-1-size, 32px);
+  font-weight: var(--heading-1-weight-medium, 500);
+  color: var(--Primary-0, #fff);
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.trip-type input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1/1;
+  border: 2px solid var(--Primary-0, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.trip-type input:checked {
+  background: radial-gradient(
+    circle,
+    var(--Primary-0, #fff) 0 6px,
+    transparent 5px
+  );
+}
+
+.trip-type label {
+  color: var(--Primary-0, #fff);
+  font-size: var(--body-2-size, 16px);
+  font-weight: var(--body-2-weight-regular, 400);
+}
+
+.directions,
+.field-date,
+.field-passengers {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 32px;
+  border-radius: 12px;
+  background: var(--Primary-900-70, rgba(0, 0, 0, 0.7));
+  min-width: 216px;
+}
+.field {
+  display: flex;
+  max-width: 216px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.field-part {
+  min-width: 150px;
+}
+
+.field-part label,
+.field-date label,
+.field-passengers label {
+  color: var(--Primary-0, #fff);
+  font-size: var(--body-3-size, 14px);
+  font-weight: var(--body-3-weight-light);
+}
+
+.field-part input,
+.field-date input,
+.field-passengers select {
+  width: 100%;
+  color: var(--Primary-0, #fff);
+  font-size: var(--body-2-size, 16px);
+  font-weight: var(--body-2-weight-medium);
+  background-color: transparent;
+  border: none;
+}
+
+.field-control {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+}
+
+.field-icon,
+.field-chevron {
+  width: 20px;
+  height: 20px;
+
+  fill: var(--Primary-0, #fff);
+}
+
+.field-chevron {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+}
+
+.field-date input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.field-passengers select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.swap-button {
+  display: flex;
+  width: 20px;
+  height: 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0;
+  background: var(--Primary-900, #000);
+}
+
+.btn {
+  display: flex;
+  flex: 1 0 0;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--body-2-size, 16px);
+  font-weight: var(--body-2-weight-regular, 400);
+  padding: 16px 20px;
+  border-radius: 20px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.btn-secondary {
+  background: var(--Primary-0, #fff);
+  color: var(--Primary-900, #000);
+}
+.btn-secondary:hover {
+  background: var(--Primary-500, #b4bbc0);
+}
