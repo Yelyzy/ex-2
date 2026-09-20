@@ -2,9 +2,10 @@
 @import "base";
 @import "layout";
 @import "modules/example";
-@import "components/card";
+@import "modules/card";
+@import "modules/filtres";
 
-:root {
+root {
   --Primary-0: #fff;
   --Primary-100: #f5f5f5;
   --Primary-200: #eceeef;
