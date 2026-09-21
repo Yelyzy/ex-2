@@ -1,8 +1,8 @@
 <div class="filters">
   <h2 class="heading-1">Start booking your flight now</h2>
   <form method="get" action="" class="filters-form">
-    <fieldset class="fieldset">
-      <fieldset class="trip-type">
+    <fieldset class="fieldset-column">
+      <fieldset class="fieldset-row">
         <legend class="visually-hidden">Trip type</legend>
         <div class="radio">
           <input
@@ -25,10 +25,10 @@
           <label for="trip-round-trip">Round trip</label>
         </div>
       </fieldset>
-      <fieldset class="flight-search">
+      <fieldset class="fieldset-row">
         <legend class="visually-hidden">Flight search fields</legend>
         <div class="directions">
-          <div class="field field-part">
+          <div class="field field-simple">
             <label for="from" class="field-label">From</label>
             <input
               type="text"
@@ -54,7 +54,7 @@
               />
             </svg>
           </button>
-          <div class="field field-part">
+          <div class="field field-simple">
             <label for="to" class="field-label">To</label>
             <input
               type="text"
@@ -67,7 +67,7 @@
             />
           </div>
         </div>
-        <div class="field field-date">
+        <div class="field field-default">
           <label for="date-from" class="field-label">From</label>
           <div class="field-control">
             <svg
@@ -106,7 +106,7 @@
             </svg>
           </div>
         </div>
-        <div class="field field-date">
+        <div class="field field-default">
           <label for="date-until" class="field-label">Until</label>
           <div class="field-control">
             <svg
@@ -145,7 +145,7 @@
             </svg>
           </div>
         </div>
-        <div class="field field-passengers">
+        <div class="field field-default">
           <label for="passengers" class="field-label">Passengers</label>
           <div class="field-control">
             <svg

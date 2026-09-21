@@ -20,14 +20,13 @@ fieldset {
   border: none;
 }
 
-.fieldset {
+.fieldset-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.trip-type,
-.flight-search {
+.fieldset-row {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -44,7 +43,7 @@ fieldset {
   align-items: center;
   gap: 8px;
 }
-.trip-type input {
+.radio input {
   appearance: none;
   width: 20px;
   height: 20px;
@@ -54,7 +53,7 @@ fieldset {
   cursor: pointer;
 }
 
-.trip-type input:checked {
+.radio input:checked {
   background: radial-gradient(
     circle,
     var(--Primary-0, #fff) 0 6px,
@@ -62,15 +61,14 @@ fieldset {
   );
 }
 
-.trip-type label {
+.radio label {
   color: var(--Primary-0, #fff);
   font-size: var(--body-2-size, 16px);
   font-weight: var(--body-2-weight-regular, 400);
 }
 
 .directions,
-.field-date,
-.field-passengers {
+.field-default {
   display: flex;
   padding: 8px;
   align-items: center;
@@ -87,21 +85,18 @@ fieldset {
   gap: 4px;
 }
 
-.field-part {
-  min-width: 150px;
-}
-
-.field-part label,
-.field-date label,
-.field-passengers label {
+.field label {
   color: var(--Primary-0, #fff);
   font-size: var(--body-3-size, 14px);
   font-weight: var(--body-3-weight-light);
 }
 
-.field-part input,
-.field-date input,
-.field-passengers select {
+.field-simple {
+  min-width: 150px;
+}
+
+.field input,
+.field-default select {
   width: 100%;
   color: var(--Primary-0, #fff);
   font-size: var(--body-2-size, 16px);
@@ -121,7 +116,6 @@ fieldset {
 .field-chevron {
   width: 20px;
   height: 20px;
-
   fill: var(--Primary-0, #fff);
 }
 
@@ -131,13 +125,13 @@ fieldset {
   margin-left: auto;
 }
 
-.field-date input::-webkit-calendar-picker-indicator {
+.field-default input::-webkit-calendar-picker-indicator {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-.field-passengers select {
+.field-default select {
   appearance: none;
   cursor: pointer;
 }
