@@ -1,10 +1,10 @@
 .filters {
   display: inline-flex;
-  padding: 16px 20px;
+  padding: 1rem 1.25rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 36px;
-  border-radius: 32px;
+  gap: 2.25rem;
+  border-radius: 2rem;
   background: var(--Primary-900-50, rgba(0, 0, 0, 0.5));
 }
 
@@ -23,17 +23,17 @@ fieldset {
 .fieldset-column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .fieldset-row {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .heading-1 {
-  font-size: var(--heading-1-size, 32px);
+  font-size: var(--heading-1-size, 2rem);
   font-weight: var(--heading-1-weight-medium, 500);
   color: var(--Primary-0, #fff);
 }
@@ -41,14 +41,14 @@ fieldset {
 .radio {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 .radio input {
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   aspect-ratio: 1/1;
-  border: 2px solid var(--Primary-0, #fff);
+  border: 0.125rem solid var(--Primary-0, #fff);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -56,50 +56,49 @@ fieldset {
 .radio input:checked {
   background: radial-gradient(
     circle,
-    var(--Primary-0, #fff) 0 6px,
-    transparent 5px
+    var(--Primary-0, #fff) 0 0.375rem,
+    transparent 0.3125rem
   );
 }
 
 .radio label {
   color: var(--Primary-0, #fff);
-  font-size: var(--body-2-size, 16px);
+  font-size: var(--body-2-size, 1rem);
   font-weight: var(--body-2-weight-regular, 400);
 }
 
 .directions,
 .field-default {
   display: flex;
-  padding: 8px;
+  padding: 0.5rem;
   align-items: center;
-  gap: 32px;
-  border-radius: 12px;
+  gap: 2rem;
+  border-radius: 0.75rem;
   background: var(--Primary-900-70, rgba(0, 0, 0, 0.7));
-  min-width: 216px;
+  min-width: 13.5rem;
 }
 .field {
   display: flex;
-  max-width: 216px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .field label {
   color: var(--Primary-0, #fff);
-  font-size: var(--body-3-size, 14px);
+  font-size: var(--body-3-size, 0.875rem);
   font-weight: var(--body-3-weight-light);
 }
 
 .field-simple {
-  min-width: 150px;
+  min-width: 9.375rem;
 }
 
 .field input,
 .field-default select {
   width: 100%;
   color: var(--Primary-0, #fff);
-  font-size: var(--body-2-size, 16px);
+  font-size: var(--body-2-size, 1rem);
   font-weight: var(--body-2-weight-medium);
   background-color: transparent;
   border: none;
@@ -109,19 +108,19 @@ fieldset {
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .field-icon,
 .field-chevron {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   fill: var(--Primary-0, #fff);
 }
 
 .field-chevron {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   margin-left: auto;
 }
 
@@ -138,13 +137,17 @@ fieldset {
 
 .swap-button {
   display: flex;
-  width: 20px;
-  height: 18px;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.125rem;
+  padding: 0;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   border: 0;
+  cursor: pointer;
   background: var(--Primary-900, #000);
+  color: var(--Primary-500, #b4bbc0);
 }
 
 .btn {
@@ -156,10 +159,10 @@ fieldset {
   outline: none;
   cursor: pointer;
   font-family: inherit;
-  font-size: var(--body-2-size, 16px);
+  font-size: var(--body-2-size, 1rem);
   font-weight: var(--body-2-weight-regular, 400);
-  padding: 16px 20px;
-  border-radius: 20px;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
   transition: background-color 0.15s ease-in-out;
 }
 
